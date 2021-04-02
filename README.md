@@ -97,8 +97,7 @@ Html:
 The html markup should be the following (as you can see in the example above):
 
 - each input has the **radio-hide** css class, and it also has a **data-target** attribute indicating the id of the pane to open when clicked
-- then write your panes as direct children of the same parent (otherwise it won't work), with a css class of: **radio-hide-pane**, 
-    and a **data-id** attribute set to the id of the pane.
+- then write your pane elements with a css class of: **radio-hide-pane**, and a **data-id** attribute set to the id of the pane.
   
 
 
@@ -108,6 +107,8 @@ Then call the **RadioHide.init** in the js.
 The available options are:
 
 - context: a jquery object/selection to use as the context. The default value is the "body".
+        When you call the init method, only the panes in the given context will be processed, the other panes will be ignored.
+  
 - openPane: string, the id of the pane which should be already opened when the page is displayed.
     By default, all panes will be hidden.
 
@@ -119,6 +120,10 @@ The available options are:
 History Log
 =============
 
+- 1.0.1 -- 2021-04-02
+  
+    - fix documentation, misleading information about panes parent (is actually irrelevant)
+    
 - 1.0.0 -- 2021-04-02
-
+  
     - initial commit
