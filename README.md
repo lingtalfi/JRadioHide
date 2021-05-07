@@ -112,7 +112,7 @@ The available options are:
 - openPane: string, the id of the pane which should be already opened when the page is displayed.
     By default, all panes will be hidden.
 
-- changeAfter: function, a callback to call after a radio button is changed
+- changeAfter: function, a callback to call after a radio button is changed. It receives the targetPane value (the data-target of the opened pane) as its first argument.
 
 
 
@@ -121,6 +121,10 @@ The available options are:
 History Log
 =============
 
+- 1.0.5 -- 2021-05-07
+  
+    - update changeAfter option, now receives targetPane as argument
+    
 - 1.0.4 -- 2021-05-07
   
     - add changeAfter option

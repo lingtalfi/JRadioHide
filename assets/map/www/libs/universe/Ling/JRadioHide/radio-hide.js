@@ -72,7 +72,7 @@ if ('undefined' === typeof RadioHide) {
                             }
                         });
 
-                        options.changeAfter();
+                        options.changeAfter(targetPane);
                     });
                 } else {
                     throw new Error("No panes found in the the given context (this function then becomes useless). Aborting.");
