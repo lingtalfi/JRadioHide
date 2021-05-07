@@ -17,6 +17,7 @@ if ('undefined' === typeof RadioHide) {
                 options = $.extend({
                     context: null,
                     openPane: null,
+                    changeAfter: function(){},
                 }, options);
 
 
@@ -70,6 +71,8 @@ if ('undefined' === typeof RadioHide) {
                                 $(this).hide();
                             }
                         });
+
+                        options.changeAfter();
                     });
                 } else {
                     throw new Error("No panes found in the the given context (this function then becomes useless). Aborting.");

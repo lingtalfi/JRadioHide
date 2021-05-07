@@ -31,7 +31,7 @@ Or just download it and place it where you want otherwise.
 
 How does it work
 ========
-2021-04-02
+2021-04-02 -> 2021-05-07
 
 The idea is that you have some radio inputs, and each time you select one of them, it shows up, while its sibling become
 hidden.
@@ -112,6 +112,7 @@ The available options are:
 - openPane: string, the id of the pane which should be already opened when the page is displayed.
     By default, all panes will be hidden.
 
+- changeAfter: function, a callback to call after a radio button is changed
 
 
 
@@ -120,6 +121,10 @@ The available options are:
 History Log
 =============
 
+- 1.0.4 -- 2021-05-07
+  
+    - add changeAfter option
+    
 - 1.0.3 -- 2021-05-07
   
     - fix radio input not unbinding jquery event before binding
