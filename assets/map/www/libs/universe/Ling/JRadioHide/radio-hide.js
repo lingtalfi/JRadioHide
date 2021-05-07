@@ -14,7 +14,6 @@ if ('undefined' === typeof RadioHide) {
 
         window.RadioHide = {
             init: function (options) {
-
                 options = $.extend({
                     context: null,
                     openPane: null,
@@ -61,7 +60,7 @@ if ('undefined' === typeof RadioHide) {
                     //----------------------------------------
                     // LISTENING
                     //----------------------------------------
-                    jContext.on('click.radioHide', ".radio-hide", function () {
+                    jContext.off('click.radioHide').on('click.radioHide', ".radio-hide", function () {
                         var jTarget = $(this);
                         var targetPane = jTarget.attr("data-target");
                         jPanes.each(function () {

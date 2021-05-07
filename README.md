@@ -1,6 +1,6 @@
 JRadioHide
 ===========
-2021-04-02 -> 2021-04-05
+2021-04-02 -> 2021-05-07
 
 A js tool to help hiding radio panes.
 
@@ -120,6 +120,10 @@ The available options are:
 History Log
 =============
 
+- 1.0.3 -- 2021-05-07
+  
+    - fix radio input not unbinding jquery event before binding
+    
 - 1.0.2 -- 2021-04-05
   
     - fix radio input not synced with pane at init
