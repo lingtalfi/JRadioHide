@@ -41,6 +41,7 @@ if ('undefined' === typeof RadioHide) {
                     jPanes.each(function () {
                         if (openPane === $(this).attr('data-id')) {
                             $(this).show();
+                            options.changeAfter(openPane);
                         } else {
                             $(this).hide();
                         }

@@ -121,6 +121,10 @@ The available options are:
 History Log
 =============
 
+- 1.0.6 -- 2021-05-07
+  
+    - fix changeAfter callback not called when selected via openPane option
+    
 - 1.0.5 -- 2021-05-07
   
     - update changeAfter option, now receives targetPane as argument
